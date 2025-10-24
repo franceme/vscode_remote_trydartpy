@@ -39,6 +39,7 @@ if __name__ == "__main__":
         """dart pub global activate interactive""",
         """dart pub global activate static_shock_cli""",
         """dart pub global activate dartpy""",
+        """dart pub global activate darq""",
     ]:
         command_success:bool = False
         for _ in range(10):

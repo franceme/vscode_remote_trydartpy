@@ -3,6 +3,7 @@
 ## Pre-loaded / General Info
 * [Static Website Shock](https://staticshock.io/guides/quickstart/)
 * [DartPy - Interacting with python](https://pub.dev/packages/dartpy)
+* [Darq](https://pub.dev/packages/darq)
 * [Dart Samples](https://github.com/dart-lang/samples)
 * [Dart Dev Tools](https://dart.dev/tools)
 * [Deploy](https://dart.dev/tools/dart-compile)
