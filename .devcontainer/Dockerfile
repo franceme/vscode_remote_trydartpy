@@ -1,0 +1,3 @@
+FROM frantzme/dartdev:latest
+
+

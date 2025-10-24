@@ -1,0 +1,13 @@
+name: vscode_remote_trydartpy
+description: A small repro for dartpy + ffi usage
+version: 0.0.1
+publish_to: none
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+
+dependencies:
+  dartpy: ^0.0.5
+  ffi: ^2.0.1
+
+dev_dependencies:
+  pedantic: ^1.11.1

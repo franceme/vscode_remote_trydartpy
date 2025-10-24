@@ -1,0 +1,62 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go
+{
+	"name": "Dart Dev Container",
+	"runArgs": [
+		"--init",
+		"--privileged"
+	],
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	//"image": "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm",
+	"build": {
+		// Path is relative to the devcontainer.json file.
+		"dockerfile": "Dockerfile"
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"redhat.telemetry.enabled": false
+			},
+			"extensions": [
+				"k--kato.intellij-idea-keybindings",
+				"alefragnani.Bookmarks",
+				"maptz.regionfolder",
+				"angelo-breuer.clock",
+				"actboy168.tasks",
+				"hbenl.vscode-test-explorer",
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"cweijan.vscode-database-client2",
+				"cweijan.dbclient-jdbc",
+				"ms-toolsai.datawrangler",
+				"Dart-Code.dart-code",
+				"luanpotter.dart-import",
+				"hzgood.dart-data-class-generator",
+				"hirantha.json-to-dart",
+				"PeterHdd.dartgettersetter",
+				"miquelddg.dart-barrel-file-generator",
+				"praveend.JtoD",
+				"Dart-Code.flutter",
+				"nolancorcoran.dart-getter-setter",
+				"Jennsen.dart-union-generator"
+			]
+		}, //https://github.com/devcontainers/features
+		"features": {
+			"ghcr.io/devcontainers/features/sshd:1": {
+				"version": "latest"
+			},
+			"ghcr.io/devcontainers/features/docker-in-docker:1": {
+				"version": "latest",
+				"moby": true
+			},
+			"ghcr.io/chuxel/feature-library/dind-patched:2": {}
+		}
+	},
+	"postAttachCommand": "python3 .devcontainer/post_execution.py"
+}
