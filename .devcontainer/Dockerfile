@@ -1,3 +1,3 @@
-FROM frantzme/dartdev:latest
+FROM frantzme/dartdev:lite
 
 
